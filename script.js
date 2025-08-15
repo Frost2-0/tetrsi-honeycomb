@@ -13,6 +13,11 @@ async function connectPhantom() {
     }
 }
 
+async function logMoveOnChain(direction) {
+  console.log("Pretend logging move:", direction);
+}
+
+
 // Hook it to the button
 document.getElementById("connectButton").addEventListener("click", connectPhantom);
 
@@ -273,3 +278,4 @@ const player = {
 
 playerReset();
 update();
+
