@@ -172,6 +172,8 @@ function playerDrop() {
         merge(arena, player);
         playerReset();
         arenaSweep();
+        logMoveOnChain("drop");
+
     }
     dropCounter = 0;
 }
@@ -278,4 +280,5 @@ const player = {
 
 playerReset();
 update();
+
 
